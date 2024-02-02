@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant Template</title>
+    <link href="files.css" rel="stylesheet"/>
+
+    <link rel="icon" href="ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+
+
+</head>
+<body>
+   
+
+
+<header>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick="closesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+            <li><a href="#menu" onclick="scrollToSection('menu')">Menu</a></li>
+            <li><a href="#blog" onclick="scrollToSection('blog')">Blog</a></li>
+            <li><a href="#hours" onclick="scrollToSection('hours')">Hours</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            
+               
+
+        </ul>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="hideonmobile"><a href="#about" onclick="scrollToSection('about')">About</a></li>
+            <li class="hideonmobile"><a href="#menu" onclick="scrollToSection('menu')">Menu</a></li>
+            <li class="hideonmobile"><a href="#blog" onclick="scrollToSection('blog')">Blog</a></li>
+            <li class="hideonmobile"><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+            <li class="hideonmobile"><a href="#hours" onclick="scrollToSection('hours')">Hours</a></li>
+            <li class="menubutton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+        </ul>
+    </nav>
+</header>
+    
+<section>
+    <img class="img1"   src="mcdonalds-logo.png" alt="your pic"/>
+</section>
+    
+
+
+
+
+<section class="sectionclass" id="about">
+
+<h1>About Us</h1>
+<img class="img2" src="macboutus.jpg" alt="macpic"/>
+<p class="p1">Back in 1954, a man named Ray Kroc discovered a small burger restaurant in California, and wrote the first page of our history. From humble beginnings as a small restaurant, we're proud to have become one of the world's leading food service brands with more than 36,000 restaurants in more than 100 countries.</p>
+</section>
+
+
+<section class="sectionclass" id="menu">
+  <h1>Menu</h1>  
+  <div class="image-container">
+    <img src="grimace.jpg" alt="Image 1">
+    <img src="mcafe.jpg" alt="Image 2">
+    <img src="meal.jpg" alt="Image 3">
+</div>
+  <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla quos. Tempora corporis laudantium saepe iure qui a, dicta magni eveniet in repudiandae obcaecati ex vel. Sit eveniet nam commodi.</p>
+    <div class="buttoncontainer"> 
+        <button class="button1" onclick="openImage()">
+            SEE OUR MENU
+        </button>
+    </div> 
+
+</section>
+
+<section class="sectionclass" id="blog">
+    <h1>Blog</h1>  
+    <p style="margin-bottom: 25px" class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, qui nihil animi id, incidunt consectetur sapiente eaque soluta in vero labore magni non itaque autem recusandae enim at aliquid quasi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, nulla quos. Tempora corporis laudantium saepe iure qui a, dicta magni eveniet in repudiandae obcaecati ex vel. Sit eveniet nam commodi.</p>
+    <div class="image-container">
+        <img src="emp2.jpg" alt="Image 2">
+        <img src="burger.jpg" alt="burg">
+    </div>
+    
+    <div class="image-container">
+        <img src="emp1.jpg" alt="Image 1">
+        <img src="emp5.jpg" alt="pic">
+     
+        <img src="emp3.jpg" alt="Image 3">
+    </div>
+
+
+  </section>
+
+  <section class="sectionclass" id="contact">
+    <h1 style="font-size: 50px; margin-bottom: 10px;">Contact Us</h1> 
+    
+    <div class="contact-container">
+        <a style="font-style: none;     "href="tel:+13103391628" class="phone-number">310-339-1628</a>
+        <a href="tel:+13103391628" class="contact-icon-link">
+            <img src="2055904.png" alt="Icon" class="contact-icon">
+        </a>
+    </div>
+    <div class="contact-container">
+        <a href="mailto:aj@asteme.com" class="email-link">aj@asteme.com</a>
+        
+        <a href="mailto:aj@asteme.com" class="email-link"> 
+        <img src="568148.png" alt="Icon" class="contact-icon">
+    </a>
+    
+    </div>
+</section>
+
+
+<section class="sectionclass" id="hours">
+    <h1 style="padding: 10px; margin-bottom: 10px;   border-bottom-style:solid; border-top-style: none; border-right-style: none; border-left-style: none; border-width: 1px;">Hours</h1>
+    <p style="text-align: center" class="p1">Monday: 6:00AM - 10:00PM</p>
+    <p style="text-align: center" class="p1">Tuesday: 6:00AM - 10:00PM</p>
+    <p style="text-align: center" class="p1">Wednesday: 6:00AM - 10:00PM</p>
+    <p style="text-align: center" class="p1">Thursday: 6:00AM - 10:00PM</p>
+    <p style="text-align: center" class="p1">Friday: 6:00AM - 12:00AM</p>
+    <p style="text-align: center" class="p1">Saturday: 8:00AM - 12:00AM</p>
+    <p style="text-align: center" class="p1">Sunday: 8:00AM - 10:00PM</p>
+</section>
+
+  <footer>
+    
+    <p>Phelps Designs</p>
+  </footer>
+
+
+
+
+
+    <script>
+
+
+
+    function openImage() {
+        // Specify the path to your image
+        var imagePath = 'menu.jpg';
+
+        // Open the image in a new window or tab
+        window.open(imagePath, '_blank');
+    }
+
+
+const nav = document.querySelector('nav');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+   const currentScrollTop = window.scrollY;
+
+   if (currentScrollTop > lastScrollTop) {
+      // Scrolling down
+      nav.classList.add('hidden');
+      nav.classList.remove('visible');
+   } else {
+      // Scrolling up
+      nav.classList.remove('hidden');
+      nav.classList.add('visible');
+   }
+
+   lastScrollTop = currentScrollTop;
+});
+
+function scrollToSection(sectionId) {
+   const section = document.getElementById(sectionId);
+
+   if (section) {
+      // Get the height of the navigation bar
+      const navHeight = document.querySelector('nav').offsetHeight;
+
+      // Get the total margin applied to the section
+      const sectionMargin = parseInt(getComputedStyle(section).marginTop) || 0;
+
+      // Get the height of the section and the viewport
+      const sectionHeight = section.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      // Calculate the scroll position, considering margins
+      let scrollPosition = section.offsetTop - (windowHeight - sectionHeight) / 2 - navHeight;
+
+      // Ensure the scroll position is not negative
+      scrollPosition = Math.max(scrollPosition, 0);
+
+      // Scroll to the calculated position
+      window.scrollTo({
+         top: scrollPosition,
+         behavior: 'smooth'
+      });
+   }
+
+   // Close the sidebar if it's open
+   closesidebar();
+}
+        const body=document.body;
+        let lastscroll=0;
+
+ 
+
+
+        function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    const hoursSection = document.getElementById('hours'); // Get the "Hours" section
+
+    if (sidebar.style.display === 'flex') {
+        sidebar.style.display = 'none';
+        hoursSection.classList.remove('hidden-section'); // Show "Hours" when closing the sidebar
+    } else {
+        sidebar.style.display = 'flex';
+        hoursSection.classList.add('hidden-section'); // Hide "Hours" when opening the sidebar
+    }
+}
+
+
+        function closesidebar() {
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+
+        function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+        }   
+
+
+
+        </script>
+
+
+</body>
+</html>
