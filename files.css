@@ -596,6 +596,41 @@ nav.hidden {
     width: 100%;
 }
 
+
+.star-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Center vertically */
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url('star-empty.png'); /* Use an empty star image */
+    background-size: cover;
+}
+
+.star.clicked, .star:hover {
+    background-image: url('star-full.png'); /* Use a filled star image */
+}
+
+#ratingMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
 .menubutton {
     display: none;
 }
